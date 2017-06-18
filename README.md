@@ -11,3 +11,10 @@ o comando
 mongod --dbpath C:/caminho_onde_esta_a_pasta/chat/api_chat/data
 
 Para testificar que esta tudo funcionando basta verificar o cmd se estiver "waiting for connections on port 27017" tudo esta corrto.
+
+---------------------------------
+
+Este projeto foi desenvolvido por Renan Moraes
+
+O intiuto dele é demonstrar de forma simples o funcionamento de ionic 3, node js e mongo db.
+
