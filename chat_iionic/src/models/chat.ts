@@ -1,3 +1,5 @@
 export interface Chat{
-    menssage: String;
+    nome: String;
+    menssagem: String;
+    dtHora: String;
 }

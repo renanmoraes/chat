@@ -5,27 +5,22 @@
 </ion-header>
 
 <ion-content padding>
-    <ion-item>
-        <ion-avatar item-left>
-            <img src="assets/img/avatar1.jpg" alt="">
-        </ion-avatar>
-        <h2>Renan Moraes</h2>
-        <p>testeee</p>
-    </ion-item>
-    <ion-item>
-        <ion-avatar>
-            <img src="assets/img/avatar2.png" alt="">
-        </ion-avatar>
-        <h2>Renan Moraes</h2>
-        <p>testeee</p>
-    </ion-item>
+    <ion-list *ngFor="let res of response">
+        <ion-item>
+            <ion-avatar item-left>
+                <img src="assets/img/avatar1.jpg" alt="">
+            </ion-avatar>
+            <h2>{{res.nome}}</h2>
+            <p>{{res.msg}}</p>
+        </ion-item>
+    </ion-list>
 </ion-content>
 <ion-footer>
     <ion-toolbar>
         <ion-grid>
             <ion-row>
                 <ion-col col-9>
-                    <ion-textarea [(ngModel)]="chat.menssage" [ngModelOptions]="{standalone: true}" placeholder="Escrever menssagem..."></ion-textarea>
+                    <ion-textarea [(ngModel)]="chat.menssagem" [ngModelOptions]="{standalone: true}" placeholder="Escrever menssagem..."></ion-textarea>
                 </ion-col>
                 <ion-col col-3>
                     <button clear ion-button (click)="teste(chat)">Enviar</button>
